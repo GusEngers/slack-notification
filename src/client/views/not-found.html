@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>404 - Slack-Notification</title>
+    <meta name="description" content="Servicio de notificaciones personalizadas para Slack, envía mensajes y alertas a mis canales de forma fácil y segura."/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<style>
+      * {
+        background-color: black;
+        color: white;
+        font-family: sans-serif;
+      }
+
+      body {
+        display: grid;
+        min-height: 100dvh;
+        grid-template-rows: auto 1fr auto;
+      }
+
+      header > nav > ul {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        margin: 1.5rem;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      main > p {
+        text-align: center;
+        max-width: 800px;
+      }
+
+      main > a {
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 0.7rem;
+      }
+
+      main > h1 {
+        text-transform: uppercase;
+      }
+
+      main > a:hover {
+        background-color: white;
+        color: black;
+      }
+
+      footer {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+      }
+    </style>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li>
+						<a href="https://github.com/GusEngers/slack-notification" target="_blank" rel="noopener noreferrer">
+              <i class="fa fa-github" aria-hidden="true"></i> GitHub
+            </a>
+					</li>
+					<li>
+            <a href="mailto:gustavoengers6441@gmail.com">
+              <i class="fa fa-envelope" aria-hidden="true"></i> Contacto
+            </a>
+					</li>
+					<li>
+            <a href="https://www.linkedin.com/in/gusengers" target="_blank" rel="noopener noreferrer">
+              <i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn
+            </a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+    <main>
+      <h1>404</h1>
+      <h2>LO SENTIMOS</h2>
+      <h3>Esta página no existe</h3>
+      <a href="/">Volver a Inicio</a>
+    </main>
+		
+    <footer>
+		  <p>&copy; <span id="year-footer"></span> Gustavo Engers. Todos los derechos reservados.</p>
+		</footer>
+
+    <script>
+      const yearFooter = document.getElementById('year-footer');
+      const currentYear = new Date().getFullYear();
+      yearFooter.textContent = currentYear;
+    </script>
+
+	</body>
+</html>
