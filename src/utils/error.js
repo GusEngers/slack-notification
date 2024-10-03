@@ -26,4 +26,12 @@ function handleApiError(err, req, res, next) {
 	}
 }
 
-module.exports = { ResponseError, handleApiError };
+function handleApiNotFound(req, res, next) {
+	res.status(404).json({
+		message: 'La ruta solicitada no existe',
+		statusCode: 404,
+		errors: [],
+	});
+}
+
+module.exports = { ResponseError, handleApiError, handleApiNotFound };
